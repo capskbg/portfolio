@@ -1,0 +1,550 @@
+@charset "utf-8";
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+/*공통*/
+
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #333;
+}
+a:visited {
+  color: #333;
+}
+a:hover {
+  color: #333;
+}
+a:active {
+  color: #333;
+}
+
+.header {
+  width: 100%;
+  height: 580px;
+}
+
+img {
+  vertical-align: middle;
+}
+h2 {
+  display: none;
+}
+
+.clear::after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+/*header영역*/
+
+.ham {
+  display: none;
+}
+
+.gnb_bg {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+nav{width:650px; height:100px;}
+.m_gnb {
+  display: none;
+  
+}
+.gnb,.m_gnb {
+  width: 650px;
+  height: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gnb > li > a,.m_gnb > li > a {
+  color: #333;
+  font-weight: bold;
+  width: 120px;
+  height: 100px;
+  line-height: 100px;
+  display: block;
+  position: relative;
+}
+
+.gnb > li > a:hover,.m_gnb > li > a:hover {
+  color: #780997;
+}
+.gnb > li > a::after,.m_gnb > li > a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.gnb > li > a:hover::after, .m_gnb > li > a:hover::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  background: #780997;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+}
+
+#logo {
+  width: 150px;
+  height: 100px;
+  line-height: 100px;
+}
+#logo img {
+  width: 120px;
+  height: 25px;
+}
+
+a.link_icon01 {
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  background: #780997;
+  border-radius: 180px;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+.header_bg {
+  width: 100%;
+  height: 480px;
+  background: url("../images/header_bg.png") center/cover no-repeat;
+  position: relative;
+}
+
+.header_bg > p {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header_bg > p:first-child {
+  font-size: 2.3rem;
+  font-weight: bold;
+  top: 35%;
+}
+.header_bg > p:last-child {
+  top: 50%;
+  font-size: 1.2rem;
+}
+
+/*contents영역*/
+
+.contents {
+  width: 100%;
+  height: auto;
+}
+
+.con_tab {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.con_tab > li {
+  float: left;
+}
+.con_tab > li > a {
+  display: block;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  font-weight: bold;
+}
+
+.con_tab > li > a:hover {
+  color: #780997;
+}
+.con_tab > li > a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.con_tab > li > a:hover::after {
+  content: "";
+  width: 80%;
+  height: 4px;
+  position: absolute;
+  background: #780997;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+}
+
+#con_tab_line {
+  background: #666;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 80px;
+}
+
+.menu_tab {
+  width: 70%;
+  margin: 0 auto;
+  height: 80px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.menu_tab > li {
+  float: left;
+  width: 25%;
+}
+.menu_tab > li > a {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #e6deda;
+  display: block;
+  color: #36252f;
+  font-weight: bold;
+}
+
+.menu_tab > li > a:hover {
+  background: #36252f;
+  color: #fff;
+}
+.item_list_bg {
+  width: 100%;
+  margin: 0 auto 50px;
+}
+.item_list {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.item_list > li {
+  width: 24%;
+  height: 300px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  position: relative;
+}
+.item_list > li > figure {
+  width: 100%;
+  height: 100%;
+}
+.item_list > li > figure > figcaption > div {
+  margin: 0 auto 15px;
+  width: 100%;
+}
+.ice {
+  width: 8px;
+  height: 8px;
+  background: #006db0;
+  border-radius: 50%;
+  display: inline-block;
+}
+.hot {
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+.item_list > li > p {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  background: #e98004;
+  color: #fff;
+  right: 5px;
+  top: 2px;
+  position: absolute;
+}
+
+/*footer 영역*/
+
+.footer {
+  width: 100%;
+  height: 300px;
+  background: #780997;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#footer_logo,
+.footer_util,
+.sns_icon,
+.tel,
+address,
+.link_icon02,
+.footer_line {
+  position: absolute;
+}
+
+#footer_logo {
+  left: 5%;
+  top: 10%;
+  display: block;
+}
+
+.footer_util {
+  width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15%;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_util > li > a {
+  color: #fff;
+}
+.sns_icon {
+  right: 5%;
+  top: 10%;
+}
+
+.sns_icon > li {
+  float: left;
+  margin-right: 5px;
+}
+
+.footer_line {
+  top: 30%;
+  left: 0;
+  background: #e6e6e6;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tel {
+  left: 5%;
+  bottom: 15%;
+  width: 300px;
+  height: 100px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.tel > p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.tel > p > span {
+  color: orangered;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+address {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  align-items: center;
+  width: 500px;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 0.8rem;
+
+  line-height: 1.5;
+}
+
+address > strong {
+  width: 150px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 5px;
+}
+address > p:last-child {
+  margin-top: 20px;
+}
+
+a.link_icon02 {
+  width: 120px;
+  height: 50px;
+  line-height: 50px;
+  background: orangered;
+  border-radius: 180px;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  right: 5%;
+  bottom: 25%;
+}
+
+@media all and (max-width: 1090px) {
+  body {
+    width: 100%;
+  }
+  html {
+    font-size: 12px;
+  }
+  .header {
+    width: 100%;
+    height: 500px;
+  }
+  .gnb_bg {
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    background-color: #e6deda;
+  }
+
+  a.link_icon01 {
+    display: none;
+  }
+
+  .header_bg {
+    width: 100%;
+    padding-top: 100px;
+    height: 400px;
+  }
+
+  .header_bg > p:first-child {
+    font-size: 1.5rem;
+  }
+  .header_bg > p:last-child {
+    width: 70%;
+    font-size: 0.9rem;
+  }
+
+  .con_tab {
+    width: 300px;
+  }
+  .con_tab > li > a {
+    width: 100px;
+    font-size: 0.9rem;
+  }
+
+  .menu_tab {
+    height: auto;
+  }
+  .menu_tab > li {
+    width: 50%;
+  }
+  .item_list > li {
+    width: 48%;
+  }
+
+  .footer {
+    height: 500px;
+  }
+
+  .footer_line {
+    display: none;
+  }
+  #footer_logo {
+    left: 1%;
+    top: 10%;
+  }
+  #footer_logo img {
+    width: 70%;
+  }
+  .footer_util {
+    left: 1%;
+    transform: unset;
+    top: 25%;
+    width: 350px;
+  }
+
+  .tel {
+    left: 1%;
+    top: 32%;
+  }
+  address {
+    width: 95%;
+    left: 1%;
+    top: 50%;
+    transform: unset;
+    display: unset;
+    line-height: 1.8;
+  }
+
+  .link_icon02 {
+    left: 1%;
+    top: 85%;
+  }
+  .sns_icon > li {
+    margin-right: 2px;
+  }
+  .sns_icon img {
+    width: 70%;
+  }
+
+  /*햄버거 버튼 영역*/
+  .ham {
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+    padding-right: 3%;
+    z-index: 9999;
+  }
+  .ham > span {
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: #780997;
+    position: relative;
+    margin: 5px auto;
+  }
+
+  .gnb {
+    display: none;
+    
+  }
+  .m_gnb{
+    display: none;
+    width: 50%;
+
+    height: 100vh;
+    position: absolute;
+
+    right: 0;
+    top: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .m_gnb > li {
+    width: 100%;
+    height: 100px;
+  }
+
+  .m_gnb > li > a {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+  }
+}
