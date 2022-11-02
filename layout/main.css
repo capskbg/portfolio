@@ -523,18 +523,51 @@ hr {
 
 .design img{width:100%; height:auto;}
 
+.design figure{position: relative; overflow: hidden; width:100%; }
+.design figure>figcaption{width:0%;
+	height:0%;
+	background:rgba(231,76,60,0.6);
+	position:absolute;
+	top:-100%; left:50%;
+	color:#fff;
+	font-size:1.5rem;
+	font-weight:bold;
+	text-align:center;
+	transform:translate(-50%,-50%);
+	transition:all .4s;
+	box-sizing:border-box;
+	padding:40% 25% 25% 25%;}
 
+    .design figure:hover>figcaption{width:100%;
+        height:100%;
+        top:50%; left:50%;
+       
+        font-size:2rem;}
+.web>a,.design>a{height:auto;}
+.web figure{position: relative; overflow: hidden; width:100%; }
 .web img{width:100%; }
+.web figure>figcaption{width:0%;
+	height:0%;
+	background:rgba(231,76,60,0.6);
+	position:absolute;
+	top:-100%; left:50%;
+	color:#fff;
+	font-size:1rem;
+	font-weight:bold;
+	text-align:center;
+	
+	transition:all .4s;
+	box-sizing:border-box;
+	}
 
-   
+    .web figure:hover>figcaption{width:100%;
+        height:100%;
+        top:50%; left:50%;
+        transform:translate(-50%,-50%);
+        font-size:2rem;}
+        .design figure:hover>figcaption>span , .web figure:hover>figcaption>span{width:100%; margin-top: 10px; font-size: 1.6rem; color:#f2f2f2;}
 
-
-.web>a{display: block; position: relative; width:100%; height:100%; overflow: hidden;}
-.web>a>input{width:0%; height:0%; position:absolute;
-	top:-100%; left:5%; }
-.web>a:hover>input{background:rgba(0, 38, 72, 0.2);
-    border-radius: 10%;
-    border: 3px solid #002648; color:#002648; font-weight: bold; font-size: 1.5rem; display: block; z-index: 9999;   top:5%; width:100px; height:50px;}
+.web input{background: transparent; border: 1px solid #f2f2f2; color:#f2f2f2; font-size: 1.5rem; display: block; margin-top: 10px; position: absolute; transform: translateX(-50%); left:50%; width:100px; height:50px;}
 
 .grid li.shown, .no-js .grid li, .no-cssanimations .grid li {
     opacity: 1;

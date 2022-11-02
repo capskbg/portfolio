@@ -18,6 +18,11 @@ a:active{color:#333;}
     overflow: hidden;
 }
 
+#logo a{width:100px; height:100px;
+     display: block;
+    background: url(../images/logo.svg) no-repeat center center/cover ;}
+
+
 /*비주얼 슬라이드 관련 CSS*/
 
 .backimg{
@@ -60,22 +65,22 @@ a:active{color:#333;}
 #bestProduct>ul>li{
     width:100%; height:100%;
     position: relative;
-    background: url() no-repeat green right top;
+    background: url() no-repeat green right top/100px;
 }
 #bestProduct>ul>li:nth-child(1){
-    background-image: url('../images/icon/fruit01.png');
+    background-image: url('../images/icon/장난감.png');
     background-color: #ffc;
 }
 #bestProduct>ul>li:nth-child(2){
-    background-image: url('../images/icon/fruit02.png');
+    background-image: url('../images/icon/사료.png');
     background-color: #cfc;
 }
 #bestProduct>ul>li:nth-child(3){
-    background-image: url('../images/icon/fruit03.png');
+    background-image: url('../images/icon/약.png');
     background-color: #ccf;
 }
 #bestProduct>ul>li:nth-child(4){
-    background-image: url('../images/icon/fruit04.png');
+    background-image: url('../images/icon/진료.png');
     background-color: #fcf;
 }
 
@@ -86,7 +91,7 @@ a:active{color:#333;}
     bottom:0; padding:20px;
 }
 
-#bestProduct>ul>li>a h3{font-size: 2rem; margin:10px 0;}
+#bestProduct>ul>li>a h3{font-size: 2rem; margin:10px 0; color:#666;}
 #bestProduct>ul>li>a p{font-size: 1rem; line-height: 2;}
 
 /*sns 영역 공통 스타일*/
